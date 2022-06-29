@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+
+    <title>Prueba 3</title>
+    <link rel="stylesheet" href="hola.css"/>
+  </head>
+  <body>
+    <div id="wen">
+    <p class="lead">Ingresa los siguientes datos:</p>
+    <form>
+      <input id="software" type="text" placeholder="Ingresa el Software" class="form-control my-2">
+      <input id="empresa" type="text" placeholder="Ingresa la Empresa" class="form-control my-2">
+      <input id="usuario" type="text" placeholder="Ingresa el Usuario" class="form-control my-2">
+      <button id="boton" type="reset" onclick="capturar();"  class="btn bnt-success">agregar</button>
+      <button id="boton2" type="reset" class="btn bnt-info" >Cambia el color de la tabla</button>
+    </form>
+    </div>
+    <div id="w2">
+      <table class="table" id="tabla">
+        <thead id="tabla">
+          <tr>
+            <th>Software:</th>
+            <th>Empresa:</th>
+            <th>Usuario:</th>
+          </tr>
+        </thead>
+      </table>
