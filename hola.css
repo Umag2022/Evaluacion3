@@ -1,0 +1,33 @@
+body{
+    background-image: url("f1.gif")
+}
+#wen{
+    width: 700px;
+    height: 200px;
+    border: 2px solid black; 
+    background-color: rgb(202, 6, 202); 
+    text-align: center;
+}
+#tabla{
+    width: 700px;
+    height: 10px;
+    border: 2px solid black; 
+    background-color: rgb(240, 13, 228); 
+    text-align: center;
+}
+button{
+    background-color:rgb(25, 0, 255);
+    color:rgb(255, 255, 255);
+}
+#software{
+    background-color:rgb(15, 223, 223);
+    text-align: center;
+}
+#empresa{
+    background-color:rgb(15, 223, 223);
+    text-align: center;
+}
+#usuario{
+    background-color:rgb(15, 223, 223);
+    text-align: center;
+}

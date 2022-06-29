@@ -26,3 +26,39 @@
           </tr>
         </thead>
       </table>
+    </div>
+    <script >
+      function capturar(){
+        console.log("capturar");
+        function Datos(software, empresa, usuario){
+          this.software=software;
+          this.empresa=empresa;
+          this.usuario=usuario;
+        }
+        var capturarsoftware=document.getElementById("software").value;
+        console.log(capturarsoftware);
+        var capturarempresa=document.getElementById("empresa").value;
+        console.log(capturarempresa);
+        var capturarusuario=document.getElementById("usuario").value;
+        console.log(capturarusuario);
+
+        sujeto= new Datos(capturarsoftware, capturarempresa, capturarusuario);
+        agregar();
+      }
+      var basedatos=[];
+      function agregar(){
+        basedatos.push(sujeto)
+        console.log(basedatos);
+        document.getElementById("tabla").innerHTML += '<tbody><td>'+sujeto.software+'</td><td>'+sujeto.empresa+'</td><td>'+sujeto.usuario+'</td></tbody>';
+      };
+      var boton2=document.getElementById("boton2");
+      boton2.onclick=function() {
+        document.getElementById('wen').style.backgroundColor="blue";
+        document.getElementById("tabla").style.backgroundColor="blue";
+        document.getElementById("boton").style.backgroundColor="red";
+        document.getElementById("boton2").style.backgroundColor="red";
+      }
+    </script>
+
+  </body>
+  </html>
